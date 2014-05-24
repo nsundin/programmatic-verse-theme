@@ -1,0 +1,147 @@
+/*  
+Theme Name: Programmatic Verse Skeleton
+Description: A light theme using Skeleton.
+Version: 1.0.0
+Author: Nicholas Sundin
+
+Tags: black, white, skeleton, minimalistic
+*/
+body {
+	font-size: 11pt;
+}
+
+h1 { font-size: 44px; line-height: 45px; margin-bottom: 8px;}
+h2 { font-size: 34px; line-height: 40px; margin-bottom: 6px;}
+
+h1 a, h2 a, h3 a {
+	text-decoration: none;
+}
+
+.postmetadata {
+	font-size: 8pt;
+	color: gray;
+}
+
+hr.large {
+	margin: 0px;
+}
+
+.post {
+	margin-bottom: 20px;
+}
+
+.metabox {
+	font-size: 8pt;
+	color: gray;
+}
+
+#logo {
+	margin-bottom: 20px;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	letter-spacing: -1px;
+	font-weight: bold; }
+
+#expand-tab {
+	visibility: hidden;
+}
+
+#expand-tab:hover {
+	cursor: pointer;
+}
+
+nav ul {
+	float: left;
+	margin-bottom: 10px;
+}
+nav ul li {
+	display: block;
+	margin-bottom: 10px; }
+nav ul li a,
+nav ul li a:visited,
+nav ul li a:active  {
+	font-size: 14px;
+	color: #555;
+	text-decoration: none;
+	font-weight: bold; }
+nav ul li a:hover,
+nav ul li a:focus {
+	color: #222; }
+
+p {
+	padding: 0 0 0 0;
+	text-indent: 2em;
+	margin: 0.3em 0 0.2em 0;
+	line-height: 1.6em;
+}
+
+/* Mobile */
+@media only screen and (max-width: 767px) {
+	header h1 { font-size: 34px; line-height: 37px; }
+	nav { position: relative; }
+	nav ul, #overview-container, #overview-indicator {
+		display: none;
+	}
+	#expand-tab {
+		visibility: visible;
+		height: 20px;
+		padding: 0px;
+		width: 50px;
+		margin-bottom: 20px;
+		text-align: center;
+		border:1px solid;
+		border-radius: 0px 0px 6px 6px;
+		border-color: gray;
+	}
+}
+
+/* Mobile Landscape */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	/*nav ul {
+		display: none;
+	}*/
+}
+
+div.overview {
+	display:none;
+	overflow: hidden;
+	position: fixed;
+	top: 0%;
+	right: 0%;
+}
+
+#overview-container {
+	margin: 0 auto;
+	overflow: hidden;
+	margin-top: 0px;
+	opacity: 0.6;
+	float: right;
+	text-align: left;
+	-webkit-transform-origin: top right;
+	-webkit-transform: scale(0.25);
+	-moz-transform-origin: top right;
+	-moz-transform: scale(0.25);
+	-ms-transform-origin: top right;
+	-ms-transform: scale(0.25);
+	background-color: white;
+}
+
+#overview-indicator {
+	margin: 0 auto;
+	overflow: hidden;
+	margin-top: 12px;
+	text-align: left;
+
+	border:1px solid;
+	border-radius:6px;
+	border-color: gray;
+	width: 100%;
+	height: 100px;
+}
+
+#credits {
+	margin-top: 50px;
+	margin-bottom: 20px;
+	font-size: 8pt;
+	text-align: center;
+	color: gray;
+}
