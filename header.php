@@ -9,11 +9,12 @@
 	<meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
 	<meta name="generator" content="WordPress <?php bloginfo('version'); ?>" /> <!-- leave this for stats -->
 
-	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/skeleton/base.css" type="text/css" media="screen" />
-	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/skeleton/skeleton.css" type="text/css" media="screen" />
-	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/skeleton/layout.css" type="text/css" media="screen" />	
-	<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" />
+	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/skeleton/base.css" type="text/css" />
+	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/skeleton/skeleton.css" type="text/css" />
+	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/skeleton/layout.css" type="text/css" />	
+	<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" />
 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 	<link rel="alternate" type="application/rss+xml" title="<?php bloginfo('name'); ?> RSS Feed" href="<?php bloginfo('rss2_url'); ?>" />
 	<link rel="alternate" type="text/xml" title="RSS .92" href="<?php bloginfo('rss_url'); ?>" />
@@ -21,7 +22,6 @@
 	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 	
 	<?php wp_get_archives('type=monthly&format=link'); ?>
-	<?php if ( is_singular() ) wp_enqueue_script( 'comment-reply' ); ?>
 	<?php wp_head(); ?>
 	
 </head>

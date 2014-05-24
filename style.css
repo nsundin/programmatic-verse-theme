@@ -123,13 +123,6 @@ p {
 	}
 }
 
-/* Mobile Landscape */
-@media only screen and (min-width: 480px) and (max-width: 767px) {
-	/*nav ul {
-		display: none;
-	}*/
-}
-
 div.overview {
 	display:none;
 	overflow: hidden;
